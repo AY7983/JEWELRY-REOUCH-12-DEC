@@ -1,6 +1,7 @@
-// FAQ.jsx
+
 import React, { useState } from "react";
-import "../styles/FAQ.css";
+import "../styles/Faq.css";
+
 
 const FAQItem = ({ question, answer, isActive, onClick }) => {
   const handleKeyDown = (e) => {
@@ -36,7 +37,7 @@ const FAQItem = ({ question, answer, isActive, onClick }) => {
   );
 };
 
-const FAQ = () => {
+const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
@@ -90,4 +91,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Faq;
